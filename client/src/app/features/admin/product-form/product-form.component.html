@@ -13,6 +13,12 @@
     <mat-form-field appearance="fill">
       <mat-label>Price</mat-label>
       <input matInput type="number" formControlName="price" required />
+      <mat-error *ngIf="productForm.get('price')?.hasError('min') && productForm.get('price')?.touched">
+        Price must be greater than 0
+      </mat-error>
+      <mat-error *ngIf="productForm.get('price')?.hasError('required') && productForm.get('price')?.touched">
+        Price is required
+      </mat-error>
     </mat-form-field>
     
     <mat-label>Upload Image</mat-label>
@@ -31,6 +37,12 @@
     <mat-form-field appearance="fill">
       <mat-label>Quantity in Stock</mat-label>
       <input matInput type="number" formControlName="quantityInStock" required />
+      <mat-error *ngIf="productForm.get('quantityInStock')?.hasError('min') && productForm.get('quantityInStock')?.touched">
+        Quantity must be greater than 0
+      </mat-error>
+      <mat-error *ngIf="productForm.get('quantityInStock')?.hasError('required') && productForm.get('quantityInStock')?.touched">
+        Quantity is required
+      </mat-error>
     </mat-form-field>
     
     <button mat-raised-button type="submit" color="primary">Create Product</button>

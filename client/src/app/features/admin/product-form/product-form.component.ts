@@ -7,6 +7,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Observable } from 'rxjs';
+import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+import { CommonModule } from '@angular/common'; // Import CommonModule
 
 @Component({
   standalone: true,
@@ -14,12 +16,14 @@ import { Observable } from 'rxjs';
   templateUrl: './product-form.component.html',
   styleUrls: ['./product-form.component.scss'],
   imports: [
+    CommonModule,  // Add CommonModule here
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
   ]
 })
+
 export class ProductFormComponent implements OnInit {
   productForm: FormGroup;
   selectedFile: File | null = null; // To hold the selected file
@@ -34,10 +38,10 @@ export class ProductFormComponent implements OnInit {
     this.productForm = this.fb.group({
       name: ['', Validators.required],
       description: ['', Validators.required],
-      price: [0, [Validators.required, Validators.min(0)]],
+      price: [0, [Validators.required, Validators.min(1)]],  // Price must be > 0
       type: ['', Validators.required],
       brand: ['', Validators.required],
-      quantityInStock: [0, [Validators.required, Validators.min(0)]],
+      quantityInStock: [0, [Validators.required, Validators.min(1)]], // Quantity must be > 0
     });
   }
 
@@ -75,7 +79,7 @@ export class ProductFormComponent implements OnInit {
             next: () => {
               console.log('Product created successfully');
               this.productCreated.emit(); // Emit event here
-              this.router.navigate(['/admin/products']);
+              this.router.navigate(['/shop']);
             },
             error: (err: any) => {
               console.error('Error creating product:', err);

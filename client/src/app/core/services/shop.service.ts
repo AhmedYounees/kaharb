@@ -4,6 +4,7 @@ import { Pagination } from '../../shared/models/pagination';
 import { Product } from '../../shared/models/product';
 import { ShopParams } from '../../shared/models/shopParams';
 import { environment } from '../../../environments/environment';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -36,7 +37,25 @@ export class ShopService {
     params = params.append('pageSize', shopParams.pageSize);
     params = params.append('pageIndex', shopParams.pageNumber);
 
-    return this.http.get<Pagination<Product>>(this.baseUrl + 'products', {params});
+    return this.http.get<Pagination<Product>>(this.baseUrl + 'products', { params });
+  }
+
+  createProduct(product: Product) {
+    return this.http.post<Product>(`${this.baseUrl}products`, product);
+  }
+
+  // Add this method for image upload
+// In your shopService
+uploadImage(imageData: FormData): Observable<{ url: string }> {
+  return this.http.post<{ url: string }>(`${this.baseUrl}products/upload-image`, imageData);
+}
+
+
+
+
+
+  deleteProduct(id: number) {
+    return this.http.delete(`${this.baseUrl}products/${id}`);
   }
 
   getProduct(id: number) {
@@ -47,13 +66,13 @@ export class ShopService {
     if (this.brands.length > 0) return;
     return this.http.get<string[]>(this.baseUrl + 'products/brands').subscribe({
       next: response => this.brands = response,
-    })
+    });
   }
 
   getTypes() {
     if (this.types.length > 0) return;
     return this.http.get<string[]>(this.baseUrl + 'products/types').subscribe({
       next: response => this.types = response,
-    })
+    });
   }
 }

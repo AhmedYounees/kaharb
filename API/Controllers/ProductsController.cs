@@ -45,6 +45,50 @@ public class ProductsController(IUnitOfWork unit) : BaseApiController
         return BadRequest("Problem creating product");
     }
 
+
+    [HttpPost("upload-image")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> UploadImage(IFormFile file)
+    {
+        if (file == null || file.Length == 0)
+            return BadRequest("No file uploaded.");
+
+        // Define the path to save the image
+        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "imgs");
+        if (!Directory.Exists(uploadsFolder))
+        {
+            Directory.CreateDirectory(uploadsFolder);
+        }
+
+        // Create a unique filename to avoid conflicts
+        var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+        var filePath = Path.Combine(uploadsFolder, fileName);
+
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            await file.CopyToAsync(stream);
+        }
+
+        // Construct the image URL
+        var imageUrl = $"{Request.Scheme}://{Request.Host}/imgs/{fileName}";
+
+        return Ok(new { url = imageUrl });
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     [InvalidateCache("api/products|")]
     [Authorize(Roles = "Admin")]
     [HttpPut("{id:int}")]

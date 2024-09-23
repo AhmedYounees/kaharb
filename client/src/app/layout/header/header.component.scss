@@ -13,6 +13,22 @@
 
 a {
     &.active {
-        color: #7d00fa;
+        color: #1e1c1c;
     }
 }
+
+.card{
+    color: #968a8a;
+
+}
+
+
+
+.mat-badge{
+    --mat-badge-background-color: #41a572;
+    --mat-badge-text-color: #e2dede;
+    --mat-badge-disabled-state-background-color: rgba(0, 221, 221, 0.38);
+    --mat-badge-disabled-state-text-color: #003737;
+}
+
+

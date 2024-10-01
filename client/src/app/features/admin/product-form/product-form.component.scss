@@ -1,34 +1,48 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .form-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; // Full viewport height for better centering
-    width: 100vw;  // Full viewport width
-    background-color: #f5f5f5; // Light background for contrast
+    align-items: flex-start;
+    min-height: 100vh; /* Vertically center the form */
+    box-sizing: border-box;
 }
 
 .product-form {
-    width: 40%;
-    padding: 20px; // Add padding for better spacing
-    background: white; // White background for the form
-    border-radius: 8px; // Rounded corners
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    width: 100%;
+    max-width: 500px; /* Restrict form size */
+    background-color: #f9f9f9; /* Optional: form background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px; /* Add some padding inside the form */
 }
 
-.product-form mat-form-field {
-    width: 100%; // Ensure fields take full width
+mat-form-field {
+    width: 100%;
+    margin-top: 5px; /* Reduce the gap between the container and the first input */
+    min-height: 0; /* Allow the field to shrink to fit its content */
 }
 
-// Center the button
-.product-form button {
-    align-self: center;
+button {
+    width: 100%; /* Full-width submit button */
+    margin-top: 20px; /* Space above the submit button */
+}
+
+input[type="file"] {
+    margin-bottom: 20px; /* Add space below the file input */
+}
+
+.small-input {
+    height: 30px; /* Desired height for the input fields */
+    font-size: 14px; /* Optional: Adjust font size */
+    line-height: normal; /* Reset line height */
+}
+
+/* Remove padding to further reduce height */
+.small-input.mat-input-element {
+    padding: 2px; /* Adjust padding for smaller height */
+}
+
+/* Adjust the minimum height of the mat-form-field */
+.mat-form-field {
+    min-height: 0; /* Allow fields to shrink */
+    padding: 0; /* Reset any padding */
 }

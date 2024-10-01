@@ -1,7 +1,55 @@
+.product-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for cards */
+  margin: 0 auto; /* Center cards if needed */
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+img[mat-card-image] {
+  width: 100%; /* Make images responsive */
+  height: 250px; /* Set a fixed height to maintain consistency */
+  object-fit: cover; /* Ensure images maintain aspect ratio and fill the area */
+}
+
+h2 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+}
+
 .action-buttons {
-    display: flex;
-    justify-content: center; /* Center buttons */
-    gap: 10px; /* Space between buttons */
-    width: 100%; /* Make sure the buttons take full width of the container */
+  display: flex;
+  justify-content: center; /* Center buttons */
+  gap: 10px; /* Space between buttons */
+  width: 100%; /* Ensure buttons take the full width */
+}
+
+.mt-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .product-title {
+      font-size: 2rem;
   }
-  
+}
+
+@media (min-width: 1024px) {
+  .product-title {
+      font-size: 2.5rem;
+  }
+}

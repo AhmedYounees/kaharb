@@ -1,15 +1,19 @@
 <header class="border-b shadow-md p-3 w-full max-h-20 fixed top-0 z-50 bg-white">
-    <div class="flex align-middle items-center justify-between max-w-screen-2xl mx-auto">
-        <img routerLink="/" src="/images/logo.png" alt="app logo" class="max-h-16">
-        <nav class="flex gap-3 my-2 uppercase text-2xl">
-            <a  routerLink="/" 
-                routerLinkActive="active"
-                [routerLinkActiveOptions]="{exact: true}"
-            >Home</a>
-            <a routerLink="/shop" routerLinkActive="active">Shoping</a>
-            <a routerLink="/test-error" routerLinkActive="active">Errors</a>
-            <a  *appIsAdmin routerLink="/admin" routerLinkActive="active">Admin</a>
-        </nav>
+    <div class="flex items-center justify-between max-w-screen-2xl mx-auto">
+        
+        <!-- New div to group logo and navigation -->
+        <div class="flex items-center gap-3">
+            <img routerLink="/" src="/images/logo.png" alt="app logo" class="max-h-16">
+            <nav class="flex gap-3 my-2 uppercase text-2xl">
+                <a routerLink="/" 
+                   routerLinkActive="active"
+                   [routerLinkActiveOptions]="{exact: true}"
+                >Home</a>
+                <a routerLink="/shop" routerLinkActive="active">Shopping</a>
+            </nav>
+        </div>
+
+        <!-- Right side content -->
         <div class="flex gap-3 align-middle">
             <a class="card" routerLink="/cart" onclick="chanMatColor()" routerLinkActive="active" 
                 matBadge="{{cartService.itemCount()}}" 
@@ -36,24 +40,36 @@
 }
 
 <mat-menu #menu="matMenu" class="px-5">
-    <button mat-menu-item class="px-3" routerLink="/cart">
+    <button mat-menu-item *appIsAdmin routerLink="/admin" routerLinkActive="active" class="px-3">
+        <mat-icon>admin_panel_settings</mat-icon>
+        Admin
+    </button>
+
+    <button mat-menu-item class="px-3" routerLink="/cart" routerLinkActive="active">
         <mat-icon>shopping_cart</mat-icon>
         My cart
     </button>
-    <button mat-menu-item class="px-3" routerLink="/orders">
+
+    <button mat-menu-item class="px-3" routerLink="/orders" routerLinkActive="active">
         <mat-icon>history</mat-icon>
         My orders
     </button>
+
     <mat-divider></mat-divider>
+
     <button mat-menu-item class="px-3" (click)="logout()">
         <mat-icon>logout</mat-icon>
         Logout
     </button>
 </mat-menu>
-<!-- <script>
+
+<!-- Script to change badge color -->
+<script>
 function chanMatColor() {
-    cir = document.getElementsByClassName("matBadge")
-    cir.style.setProperty('--mat-badge-background-color', '#c5bbbb');
-    cir.style.setProperty('--mat-badge-text-color', '#020202');
+    let cir = document.querySelectorAll(".matBadge");
+    cir.forEach(function(element) {
+        element.style.setProperty('--mat-badge-background-color', '#c5bbbb');
+        element.style.setProperty('--mat-badge-text-color', '#020202');
+    });
 }
-</script> -->
+</script>

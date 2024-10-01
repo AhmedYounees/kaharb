@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, inject, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import CommonModule
+import { CommonModule } from '@angular/common';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { Order } from '../../shared/models/order';
 import { MatPaginator, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
@@ -20,7 +20,7 @@ import { ProductFormComponent } from './product-form/product-form.component';
   selector: 'app-admin',
   standalone: true,
   imports: [
-    CommonModule, // Add CommonModule here
+    CommonModule,
     ProductFormComponent,
     MatTableModule,
     MatPaginatorModule,
@@ -50,11 +50,50 @@ export class AdminComponent implements OnInit {
   showProductManagement = true; // Control visibility of the product management tab
 
   ngOnInit(): void {
-    // this.loadOrders();
+    this.loadOrders(); // Load orders on initialization
+  }
+
+  loadOrders() {
+    this.adminService.getOrders(this.orderParams).subscribe({
+      next: response => {
+        if (response.data) {
+          this.dataSource.data = response.data;
+          this.totalItems = response.count;
+        }
+      }
+    });
+  }
+
+  onPageChange(event: PageEvent) {
+    this.orderParams.pageNumber = event.pageIndex + 1;
+    this.orderParams.pageSize = event.pageSize;
+    this.loadOrders();
+  }
+
+  onFilterSelect(event: MatSelectChange) {
+    this.orderParams.filter = event.value;
+    this.orderParams.pageNumber = 1;
+    this.loadOrders();
+  }
+
+  async openConfirmDialog(id: number) {
+    const confirmed = await this.dialogService.confirm(
+      'Confirm refund',
+      'Are you sure you want to issue this refund? This cannot be undone'
+    );
+
+    if (confirmed) this.refundOrder(id);
+  }
+
+  refundOrder(id: number) {
+    this.adminService.refundOrder(id).subscribe({
+      next: order => {
+        this.dataSource.data = this.dataSource.data.map(o => o.id === id ? order : o);
+      }
+    });
   }
 
   onProductCreated() {
     this.showProductManagement = true; // Switch to product management tab after creating a product
   }
 }
- 

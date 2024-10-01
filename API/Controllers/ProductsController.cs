@@ -75,20 +75,6 @@ public class ProductsController(IUnitOfWork unit) : BaseApiController
         return Ok(new { url = imageUrl });
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     [InvalidateCache("api/products|")]
     [Authorize(Roles = "Admin")]
     [HttpPut("{id:int}")]

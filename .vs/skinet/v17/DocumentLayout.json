@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12DFF922-8858-481A-8F21-87453A0B1D18}|Infrastructure\\Infrastructure.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\infrastructure\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12DFF922-8858-481A-8F21-87453A0B1D18}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEA59DB0-7ADA-4708-A6E2-D2A29F277E98}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19B0074D-0001-4F71-8033-D3EDC13E2A39}|Core\\Core.csproj|c:\\users\\ahmed younes\\desktop\\grad\\skinet-2024\\core\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +62,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\Infrastructure\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\Infrastructure\\Services\\PaymentService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAA1wHwAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T16:30:55.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "API\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAhwEkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T16:26:16.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-01T16:03:06.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "API\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAgwBQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:59:24.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:56:31.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "API.http",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\API.http",
+              "RelativeDocumentMoniker": "API\\API.http",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\API.http",
+              "RelativeToolTip": "API\\API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-01T15:53:53.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "API\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\WeatherForecast.cs",
+              "RelativeToolTip": "API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:53:51.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:53:44.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\appsettings.Development.json",
+              "RelativeToolTip": "API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-01T15:53:45.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\Core\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\IProductRepository.cs",
@@ -38,12 +191,11 @@
               "RelativeToolTip": "Core\\Interfaces\\IProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T23:58:14.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T23:58:14.844Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\Infrastructure\\Data\\ProductRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Data\\ProductRepository.cs",
@@ -51,12 +203,11 @@
               "RelativeToolTip": "Infrastructure\\Data\\ProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T23:56:35.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T23:56:35.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "ProductSpecParams.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\Core\\Specifications\\ProductSpecParams.cs",
               "RelativeDocumentMoniker": "Core\\Specifications\\ProductSpecParams.cs",
@@ -64,18 +215,17 @@
               "RelativeToolTip": "Core\\Specifications\\ProductSpecParams.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T23:56:28.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T23:56:28.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Ahmed Younes\\Desktop\\grad\\skinet-2024\\API\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAgwI8AAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T22:00:00.96Z",
               "EditorCaption": ""
